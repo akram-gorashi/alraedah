@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { LandingPageComponent } from './components/landing-page/landing-page/landing-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeroComponent } from './components/landing-page/hero/hero.component';
+import { ServicesComponent } from './components/landing-page/services/services.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HeroComponent } from './components/landing-page/hero/hero.component';
     HeaderComponent,
     FooterComponent,
     LandingPageComponent,
-    HeroComponent
+    HeroComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
