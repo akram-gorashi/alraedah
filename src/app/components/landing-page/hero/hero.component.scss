@@ -1,0 +1,15 @@
+.hero {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+   line-height: 1.5;
+	color: white;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+   overflow:hidden !important;
+
+}
