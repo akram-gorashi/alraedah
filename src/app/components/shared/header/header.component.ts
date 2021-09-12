@@ -1,15 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  /* UI */
+  hasScrolledBanner = false;
+  isNavbarCollapsed = false;
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  /**
+   * Listens to window scroll events
+   *
+   * @param {*} event
+   * @memberof HeaderComponent
+   */
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: any) {
+    if (window.pageYOffset > 100) this.hasScrolledBanner = true;
+    else this.hasScrolledBanner = false;
   }
-
 }
