@@ -1,6 +1,14 @@
+@import "../../../../assets/variables.scss";
 
-.logo-img {
-      height: 55px;
-      width: auto;
+.nav-scrolled {
+   background-color: $primary-color;
 }
-
+.navbar {
+  a {
+    color: $white;
+  }
+  .logo-img {
+    height: 55px;
+    width: auto;
+  }
+}

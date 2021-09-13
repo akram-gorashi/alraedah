@@ -1,15 +1,59 @@
-.hero {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-   line-height: 1.5;
-	color: white;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg');
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-   overflow:hidden !important;
+@import "../../../../assets/variables.scss";
 
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  color: $white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://imgur.com/c1gGZHL.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden !important;
+  .arrow-down-icon {
+   display: flex;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   width: 80px;
+   height: 50px;
+   background: $primary-color;
+   border-radius: 5px 5px 0px 0px;
+   cursor: pointer;
+
+   i {
+      font-size: 40px;
+      margin: auto !important;
+      animation: lock 2s cubic-bezier(.36,.07,.57,.99) infinite;
+
+   }
+  
+   @keyframes lock {
+      0% {
+         transform: scale(1) translateY(0);
+      }
+      20% {
+         transform: scale(1) translateY(-5px);
+      }
+      30% {
+         transform: scale(1) translateY(5px);
+      }
+      50% {
+         transform: scale(1) translateY(-5px);
+      }
+      60% {
+         transform: scale(1) translateY(5px);
+      }
+      100% {
+         transform: scale(1) translateY(0);
+      }
+   }
+ }
+ 
 }
+
+
