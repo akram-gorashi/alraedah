@@ -14,6 +14,7 @@ import { AdsCenterComponent } from './components/landing-page/ads-center/ads-cen
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ElectronicsServicesComponent } from './components/landing-page/electronics-services/electronics-services.component';
 import { RoomServicesComponent } from './components/landing-page/room-services/room-services.component';
+// import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,9 @@ import { RoomServicesComponent } from './components/landing-page/room-services/r
   imports: [
     BrowserModule,
     RouterModule.forRoot([]),
+   /*  AgmCoreModule.forRoot({
+      apiKey: ''
+    }), */
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule

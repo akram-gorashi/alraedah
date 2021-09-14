@@ -1,0 +1,11 @@
+@import "../../../../assets/variables.scss";
+
+.footer-navs {
+   padding: 0 4em;
+  background-color: $primary-color;
+  color: $white;
+
+  i {
+     font-size: 30px;
+  }
+}
