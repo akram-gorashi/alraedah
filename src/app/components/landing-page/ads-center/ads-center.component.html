@@ -1,16 +1,33 @@
 <section class="container">
-   <h2 class="text-center">المركز الإعلامي</h2>
+   <h2 class="text-center my-4">المركز الإعلامي</h2>
    <owl-carousel-o [options]="adsCenterOptions" dir="ltr">
 
       <ng-container>
+         <!--  <ng-template carouselSlide>
+            <button class="btn btn-primary">أخر الأخبار</button>
+            <img src="https://imgur.com/dTBV8dk.png">
+            <div class="row">
+               <div class="col"></div>
+               <div class="col"></div>
+               <div class="col"></div>
+            </div>
+         </ng-template> -->
          <ng-template carouselSlide>
-            <img src="https://imgur.com/lZRdqfS.png">
-         </ng-template>
-         <ng-template carouselSlide>
-            <img src="https://imgur.com/lZRdqfS.png">
+            <div class="slid-item" style="background-image: url('https://imgur.com/dTBV8dk.png');" dir="rtl">
+               <button class="btn">أخر الأخبار</button>
+               <div class="w-100  align-bottom">
+                  <div class="text-item px-2" style="color:#ffde39">05 سبتمبر 2021</div>
+                  <div class="text-item">
+                     <span>
+                        منتدى الرياض الاقتصادي يعقد ورشته الرئيسية لاختيار دراسات الدورة العاشرة
+                     </span>
+                  </div>
+                  <div class="text-item">
+                     <button class="btn"> المزيد...</button>
+                  </div>
+               </div>
+            </div>
          </ng-template>
       </ng-container>
-
    </owl-carousel-o>
-
 </section>

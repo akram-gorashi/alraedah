@@ -1,0 +1,34 @@
+@import "../../../../assets/variables.scss";
+
+.slid-item {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 400px;
+  position: relative;
+  button {
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px 35px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: unset !important;
+  }
+
+  button:hover {
+    background: $primary-color;
+    color: $white;
+  }
+  .align-bottom {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 14% 70% 16%;
+    align-items: center;
+    background: #7f7f7f;
+    height: 50px;
+    .text-item {
+      // background-color: red;
+    }
+  }
+}

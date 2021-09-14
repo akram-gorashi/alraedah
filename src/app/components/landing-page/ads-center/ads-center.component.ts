@@ -8,20 +8,24 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class AdsCenterComponent implements OnInit {
   adsCenterOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    dots: false,
-    navSpeed: 700,
-    navText: ['', ''],
-    responsive: {
-      940: {
-        items: 1,
-      },
-    },
-    nav: true,
-  };
+   loop: true,
+   mouseDrag: true,
+   touchDrag: true,
+   autoplay: true,
+   autoplayTimeout: 3000,
+   autoplayHoverPause: true,
+   dots: false,
+   nav: true,
+   navSpeed: 700,
+   navText: ['', ''],
+   responsive: {
+      900: {
+         items: 1
+      }
+   },
+   responsiveRefreshRate: 50
+}
+
   constructor() {}
 
   ngOnInit(): void {}
