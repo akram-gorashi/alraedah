@@ -2,7 +2,7 @@
     <div class="row">
         <div *ngFor="let item of supportBusiness" class="col-md-4">
             <div class="box">
-                <a><i class="fa fa-3x fa-globe" aria-hidden="true"></i><br>{{item.title}}<br>
+                <a><i [class]="item.icon" aria-hidden="true"></i><br><h5 class="pt-4">{{item.title}}</h5><br>
                     <p>{{item.desc}}</p>
                 </a>
             </div>
