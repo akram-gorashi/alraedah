@@ -1,7 +1,19 @@
-.box {
-   width: 227px;
-   height: 227px;
- }  
+ .swiper-slide {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.chambr-services {
+  background-image: url(https://www.chamber.sa/_layouts/15/RDCCI/design/ar/images/bg-3.jpg);
+}
+// .box {
+//    width: 227px;
+//    height: 227px;
+//    margin: auto;
+//    font-family: inherit;
+//  }  
  .box a {
    display: block;
    width: 100%;
@@ -12,4 +24,51 @@
    text-align: center;
    transition: none;
    line-height: 1;
+  //  font-family: "din-next-arabic";
  }
+ i.fa.fa-3x {
+  color: #6d92a6;
+ }
+
+ h2{
+  font-size: 40px;
+  font-weight: bold;
+ }
+ .box h4 {
+  font-weight: 700;
+  // font-family: 'Roboto';
+}
+ a h4 {
+  font-size: 25px;
+  height: 25px;
+  
+}
+ a h4 span {
+    color: #6d92a6;
+    display: inline-block;
+}
+.box a .cont-img:hover {
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -wekit-transform: scale(1.2);
+}
+.cont-img{
+  height: 55px;
+  display: inline-block;
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+}
+.more {
+  display: inline-block;
+  padding: 10px 30px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+    background: #6d92a6;
+    margin-top: 30px;
+  transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+}
+.more:hover {
+  background: #233E51;
+}

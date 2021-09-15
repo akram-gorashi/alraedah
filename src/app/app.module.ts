@@ -17,6 +17,7 @@ import { RoomServicesComponent } from './components/landing-page/room-services/r
 import { PartnersComponent } from './components/landing-page/partners/partners.component';
 import { SupportBusinessComponent } from './components/landing-page/support-business/support-business.component';
 import { AgmCoreModule } from '@agm/core';
+import { ChambrServicesComponent } from './components/landing-page/chambr-services/chambr-services.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AgmCoreModule } from '@agm/core';
     ElectronicsServicesComponent,
     RoomServicesComponent,
     PartnersComponent,
-    SupportBusinessComponent
+    SupportBusinessComponent,
+    ChambrServicesComponent
   ],
   imports: [
     BrowserModule,
