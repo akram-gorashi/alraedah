@@ -14,6 +14,8 @@ import { AdsCenterComponent } from './components/landing-page/ads-center/ads-cen
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ElectronicsServicesComponent } from './components/landing-page/electronics-services/electronics-services.component';
 import { RoomServicesComponent } from './components/landing-page/room-services/room-services.component';
+import { PartnersComponent } from './components/landing-page/partners/partners.component';
+import { SupportBusinessComponent } from './components/landing-page/support-business/support-business.component';
 // import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
@@ -26,7 +28,9 @@ import { RoomServicesComponent } from './components/landing-page/room-services/r
     ServicesComponent,
     AdsCenterComponent,
     ElectronicsServicesComponent,
-    RoomServicesComponent
+    RoomServicesComponent,
+    PartnersComponent,
+    SupportBusinessComponent
   ],
   imports: [
     BrowserModule,
