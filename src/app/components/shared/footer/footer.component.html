@@ -1,31 +1,113 @@
-<footer>
-   <div class="footer-navs">
-      <div class="row"></div>
-      <hr>
-      <div class="row">
-         <div class="col-lg-2"><a>الرئيسية</a></div>
-         <div class="col-lg-2"><a>الأسئلة الشائعة</a></div>
-         <div class="col-lg-2"><a>الشكاوى والاقتراحات</a></div>
-         <div class="col-lg-2"><a>اتصل بنا</a></div>
-         <div class="col-lg-2"><a>خريطة الموقع</a></div>
-         <div class="col-lg-2"><a>سياسة الخصوصية</a></div>
-      </div>
-      <hr>
-      <div class="row">
-         <div class="col-md-4 col-xs-12 social">
-            <div class="row">
-               <div class="col-lg-2"><i class="fab fa-twitter"></i></div>
-               <div class="col-lg-2"><i class="fab fa-linkedin"></i></div>
-               <div class="col-lg-2"><i class="fab fa-facebook"></i></div>
-               <div class="col-lg-2"><i class="fab fa-youtube"></i></div>
+<footer class="footer-section">
+   <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+         <div class="row">
+            <div class="col-xl-4 col-md-5 mb-30">
+               <div class="single-cta">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="cta-text">
+                     <h4>موقعنا</h4>
+                     <span>طريق ابي بكر الصديق الفرعي، المرسلات، الرياض 12464</span>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-4 col-md-3 mb-30">
+               <div class="single-cta">
+                  <i class="fas fa-phone"></i>
+                  <div class="cta-text">
+                     <h4>مركز الاتصال الموحد</h4>
+                     <span>920004565</span>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+               <div class="single-cta">
+                  <i class="far fa-envelope-open"></i>
+                  <div class="cta-text">
+                     <h4>البريد الإلكتروني</h4>
+                     <span>info@alraedah.com</span>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
-
-      <div class="footer">
-         <agm-map [latitude]="lat" [longitude]="lng">
-            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-          </agm-map>
+      <div class="footer-content pt-5 pb-5">
+         <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+               <div class="footer-widget">
+                  <div class="footer-logo">
+                     <a><img src="https://imgur.com/g0gXSg7.png" class="img-fluid" alt="logo"></a>
+                  </div>
+                  <div class="footer-text">
+                     <p>مرحبا بكم فى موقع الرائدة لتقديم الحلول الذكية فى مجال تكنولوجيا المعلومات.</p>
+                  </div>
+                  <div class="footer-social-icon">
+                     <span>Follow us</span>
+                     <a><i class="fab fa-facebook-f facebook-bg"></i></a>
+                     <a><i class="fab fa-twitter twitter-bg"></i></a>
+                     <a><i class="fab fa-google-plus-g google-bg"></i></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+               <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                     <h3>Useful Links</h3>
+                  </div>
+                  <ul>
+                     <li><a>الأسئلة الشائعة</a></li>
+                     <li><a>الرئيسية</a></li>
+                     <li><a>الشكاوى والاقتراحات</a></li>
+                     <li><a>اتصل بنا</a></li>
+                     <li><a>خريطة الموقع</a></li>
+                     <li><a>سياسة الخصوصية</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+               <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                     <h3>النشرة البريدية</h3>
+                  </div>
+                  <div class="footer-text mb-25">
+                     <br>
+                  </div>
+                  <div class="subscribe-form">
+                     <form action="#">
+                        <input type="text" placeholder="Email Address">
+                        <button><i class="fab fa-telegram-plane"></i></button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="">
+      <agm-map [latitude]="lat" [longitude]="lng">
+         <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map>
+   </div>
+   <div class="copyright-area">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+               <div class="copyright-text">
+                  <p>Copyright &copy; 2021, All Right Reserved <a href="https://alraedah.co/">ِlraedah</a></p>
+               </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+               <div class="footer-menu">
+                  <ul>
+                     <li><a>الرئيسية</a></li>
+                     <li><a>الشكاوى والاقتراحات</a></li>
+                     <li><a>اتصل بنا</a></li>
+                     <li><a>سياسة الخصوصية</a></li>
+                     <li><a>الأسئلة الشائعة</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
       </div>
    </div>
 </footer>
