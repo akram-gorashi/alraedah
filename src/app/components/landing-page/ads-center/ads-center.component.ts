@@ -12,10 +12,9 @@ export class AdsCenterComponent implements OnInit {
    mouseDrag: true,
    touchDrag: true,
    autoplay: true,
-   autoplayTimeout: 3000,
+   autoplayTimeout: 4000,
    autoplayHoverPause: true,
    dots: false,
-   nav: true,
    navSpeed: 700,
    navText: ['', ''],
    responsive: {

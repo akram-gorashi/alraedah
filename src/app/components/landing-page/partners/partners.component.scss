@@ -1,22 +1,15 @@
 
   .partners-section {
     direction: ltr;
-    /*background: #f5f7fa; 
-     background: linear-gradient(rgb(211 220 232), #f5f7fa); 
-    border-top: 1px solid #eee;*/
     background: #fff; 
-    box-shadow: 0 10px 30px rgb(0 0 0 / 20%);
   }
   .partner-logo {
-    height: 100px;
+    height: 150px;
     min-width: 100px;
     max-width: 140px;
   }
   
-  /* .partner-logo img {
-    margin: auto;
-    max-height: 100px;
-  } */
+
   .partners-section .partner-item{
     background-color: #eee !important;
   }
