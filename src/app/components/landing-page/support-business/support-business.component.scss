@@ -1,9 +1,21 @@
 @import "../../../../assets/variables.scss";
-
+.suport-business{
+  text-align: center;
+  background-image: url(https://www.chamber.sa/_layouts/15/RDCCI/design/ar/images/commitee-bg.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 100px 0;
+  h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 3rem;
+  }
+}
 .support-section {
-    .row {
-        padding: 2em 12em;
-    }
+
     .col-md-4 {
         background: $primary-color;
         border-left: #6d92a6 1px solid;
@@ -11,7 +23,9 @@
         padding-bottom: 80px;
         position: relative;
         transition: transform 1s;
-
+        transition: .2s ease-in-out;
+        -webkit-transition: .2s ease-in-out;
+      
           .box a {
             display: block;
             width: 100%;
@@ -24,12 +38,12 @@
 
           .box p {
             line-height: 2;
-            text-align: right;
           }
            
   &:hover {
-    background-color: #6d92a6;
+    background-color: #47748c;
     transform: scale(1.1);
+    z-index: 1;
   }
     }
 

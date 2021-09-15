@@ -1,11 +1,19 @@
-<div class="support-section ">
-    <div class="row">
-        <div *ngFor="let item of supportBusiness" class="col-md-4">
-            <div class="box">
-                <a><i [class]="item.icon" aria-hidden="true"></i><br><h5 class="pt-4">{{item.title}}</h5><br>
-                    <p>{{item.desc}}</p>
-                </a>
+<section class="suport-business">
+    <a >
+        <h2>قطاع دعم الأعمال</h2>
+    </a>
+    <div class="container">
+        <div class="support-section ">
+            <div class="row">
+                <div *ngFor="let item of supportBusiness" class="col-md-4">
+                    <div class="box">
+                        <a><i [class]="item.icon" aria-hidden="true"></i><br><h5 class="pt-4">{{item.title}}</h5><br>
+                            <p>{{item.desc}}</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+
