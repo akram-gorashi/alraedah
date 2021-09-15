@@ -25,15 +25,28 @@
     grid-gap: 20px;
     grid-template-columns: 14% 70% 16%;
     align-items: center;
-    background: #7f7f7f;
-    height: 50px;
+    background: #00000080;
+    color: #ffffff;
+        height: 50px;
     .text-item {
       // background-color: red;
     }
   }
 }
  .cont-img img {
- height: 60px;
- width: 120px;
- padding-top: 1em 10px !important;
+  height: 70px;
+  padding-bottom: 1rem;
+  display: inline-block;
+  transition: .1s ease-in-out;
+  -webkit-transition: .1s ease-in-out;
  }
+
+ .cont-img img:hover {
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -wekit-transform: scale(1.2);
+}
+.cont-img .custom-img{
+    width: 70% !important;
+    height: 100% !important;
+}

@@ -1,0 +1,191 @@
+.section-calender{
+    background-image: url(https://www.chamber.sa/_layouts/15/RDCCI/design/ar/images/bg-4.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 100px 0px;
+    text-align: center;
+}
+.section-calender h2{
+ color: #ffffff;
+}
+// .min-container{
+//     width: 75%;
+//     margin-right: auto;
+//     margin-left: auto;
+// }
+.event-Reports{
+    display: inline-block;
+    padding: 10px 30px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: #6d92a6;
+    margin-top: 30px;
+   text-decoration: none;
+}
+.event-Reports:hover {
+    background: #233E51;
+}
+.calender-img img{
+    width: 12rem;
+    height: 86px;;
+}
+.calender-text{
+    span{
+        font-size: 1rem;
+        display: block;
+        margin: 10px 0;
+        color: #ffffff;
+    }
+    h4{
+        color: #ffffff;
+    }
+}
+
+// calender
+h4 {
+    color: #ffffff;
+    opacity: 0.7;
+  }
+  
+  ul {
+    list-style:none;
+  }
+  
+  a {
+    text-decoration:none;
+  }
+  
+  .active {
+    background: rgb(6, 161, 0);
+    padding: 2px 5;
+  }
+  
+  .calendar-body {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+  }
+  
+  .calendar-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 2px solid #ffffff;
+  }
+  
+  .main-container {
+    // background: #ecfffc;
+    color: #ffffff;
+    width: 500px;
+    border-radius: 10px;
+    margin-right: 20rem;
+    margin-bottom: 2rem;
+  }
+  
+  .weekdays { 
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .days li {
+    padding: 10px 0;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .days li:hover {
+    color: #c74b43;
+  }
+  
+  .previous-month {
+    opacity: 0.4;
+  }
+  
+  .date-with-event {
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .date-with-event:hover {
+    background: #ffffff;
+    color: #ecfffc;
+    font-weight: bold;
+  }
+  
+  .event-count {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 0.6rem;
+    background: #c74b43;
+    color: #fff;
+    display: block;
+    padding: 2px 5px;
+    border-radius: 50px;
+  }
+  
+  .active {
+    border: 2px solid #ffffff;
+    color: #ecfffc;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .active:hover {
+    background: black;
+  }
+  
+  div.add-new-event {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+    border-radius: 10px;
+    color: black;
+    text-align: left;
+  }
+  
+  div.plus {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: white;
+    margin: 10px auto;
+    margin-bottom: 10px;
+    border: 2px solid black;
+  }
+  
+  div.plus:hover {
+    animation: rotateplus 0.5s ease-out;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+    cursor: pointer;
+  }
+  
+  @keyframes rotateplus {
+    0% {
+      transform: rotate(0deg);
+    }
+   
+    100% {
+      transform: rotate(-135deg);
+    }
+}

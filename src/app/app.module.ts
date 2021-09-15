@@ -18,6 +18,7 @@ import { PartnersComponent } from './components/landing-page/partners/partners.c
 import { SupportBusinessComponent } from './components/landing-page/support-business/support-business.component';
 import { AgmCoreModule } from '@agm/core';
 import { ChambrServicesComponent } from './components/landing-page/chambr-services/chambr-services.component';
+import { CalenderComponent } from './components/landing-page/calender/calender.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ChambrServicesComponent } from './components/landing-page/chambr-servic
     RoomServicesComponent,
     PartnersComponent,
     SupportBusinessComponent,
-    ChambrServicesComponent
+    ChambrServicesComponent,
+    CalenderComponent
   ],
   imports: [
     BrowserModule,
