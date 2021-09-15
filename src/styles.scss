@@ -17,7 +17,10 @@ body {
 // @import url(./assets/variables.scss);
 
 
-
+agm-map {
+    height: 300px;
+  }
+  
 @keyframes scale {
    0% {
        transform: scale(.8);

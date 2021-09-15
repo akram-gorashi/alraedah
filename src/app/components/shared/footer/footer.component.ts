@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-   lat = 51.678418;
-   lng = 7.809007;
+   lat = 24.76034720684703;
+   lng =46.69502634030517;
+
+
   constructor() { }
 
   ngOnInit(): void {
