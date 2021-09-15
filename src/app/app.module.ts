@@ -16,7 +16,7 @@ import { ElectronicsServicesComponent } from './components/landing-page/electron
 import { RoomServicesComponent } from './components/landing-page/room-services/room-services.component';
 import { PartnersComponent } from './components/landing-page/partners/partners.component';
 import { SupportBusinessComponent } from './components/landing-page/support-business/support-business.component';
-// import { AgmCoreModule } from '@agm/core';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -35,9 +35,9 @@ import { SupportBusinessComponent } from './components/landing-page/support-busi
   imports: [
     BrowserModule,
     RouterModule.forRoot([]),
-   /*  AgmCoreModule.forRoot({
-      apiKey: ''
-    }), */
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBf-nmwJZNmuKybNLLU0JHEabA-k62inRY'
+    }),
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule
