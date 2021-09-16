@@ -4,8 +4,10 @@
   background-image: linear-gradient(rgb(0 0 0 / 1%), rgb(0 0 0 / 2%)),
     url("https://imgur.com/fecHwy8.png");
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
   h2 {
       text-align: center;
       display: block;

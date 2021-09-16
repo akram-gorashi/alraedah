@@ -1,166 +1,229 @@
-<!-- <nav class="navbar navbar-expand-lg fixed-top" [class.nav-scrolled]="hasScrolledBanner">
+<nav class="navbar navbar-expand-lg fixed-top" [class.fixed-top-head]="isShownHead" [class.nav-scrolled]="hasScrolledBanner">
 
-   <div class="container">
-      <a class="navbar-brand">
-         <img class="logo-img" src="https://imgur.com/g0gXSg7.png" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-         <i class="fas fa-bars"></i>
-      </button>
+	<div class="container">
+		<a class="navbar-brand">
+			<img class="logo-img" src="https://imgur.com/g0gXSg7.png" alt="">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fas fa-bars"></i>
+		</button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul class="navbar-nav mr-auto w-100 align-items-center justify-content-end">
-           
-            <li class="nav-item">
-               <a class="nav-link">الخدمات الإلكترونية</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link">عن الرائدة</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link">
-                  <i class="fa fa-phone"></i>
-               </a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link">
-                  <i class="fa fa-search"></i>
-               </a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link">
-                  English
-               </a>
-            </li>
-            <li class="nav-item">
-               <a  class="nav-link"(click)="toggleShowHead()">
-                  <i class="fa fa-list"></i>
-               </a>
-            </li>
-            <li class="nav-item" *ngIf="!hasScrolledBanner">
-               <a class="nav-link">
-                  <img class="logo-img" src="https://imgur.com/KGUUxPS.png" alt="">
-               </a>
-            </li>
-         </ul>
-      </div>
-   </div>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto w-100 align-items-center justify-content-end">
+
+				<li class="nav-item">
+					<a class="nav-link">الخدمات الإلكترونية</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">عن الرائدة</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">
+						<i class="fa fa-phone"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">
+						<i class="fa fa-search"></i>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">
+						English
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" (click)="toggleShowHead()">
+						<i class="fa fa-list"></i>
+					</a>
+				</li>
+				<li class="nav-item" *ngIf="!hasScrolledBanner">
+					<a class="nav-link">
+						<img class="logo-img" src="https://imgur.com/KGUUxPS.png" alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 </nav>
 
- *ngIf="isShownHead"
--->
 
- <header class="container-fluid " >
+
+
+<header class="container-fluid " *ngIf="isShownHead">
 	<div class="container px-0 menuContainer">
 		<nav class="navbar navbar-expand-xl navbar-light align-items-end p-xl-0">
 			<a class="navbar-brand d-none" href="javascript:void(0)">
-				<img src="https://runyoursite.in/wp-content/uploads/2020/02/runyoursite-logo.png" width="180px" class="img-fluid">
+				<img src="https://runyoursite.in/wp-content/uploads/2020/02/runyoursite-logo.png" width="180px"
+					class="img-fluid">
 			</a>
 
 			<a href="javascript:void(0)" id="mobileBar" class="d-none ml-auto"> <i class="fa fa-bars"></i></a>
 			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ml-md-auto justify-content-end" id="nav">
+				<ul class="navbar-nav ml-md-auto justify-content-center" id="nav">
 					<!-- <li class="nav-item active">
 						<a class="nav-link" href="javascript:void(0)">Home <span class="sr-only">(current)</span></a>
 					</li> -->
-               <li class="nav-item dd">
-						<a class="nav-link" href="javascript:void(0)">Programs <span class="sr-only">(Programs)</span></a>
+					<li class="nav-item dd">
+						<a class="nav-link" href="javascript:void(0)">الرئيسة <span
+								class="sr-only">(Programs)</span></a>
 						<ul class="list-unstyled dropdownMenu">
 							<li>
-								<a href="javascript:void(0)">Toddlers</a>
+								<a href="javascript:void(0)">عن الرائدة</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">Preschool</a>
-							</li>
-						</ul>
-					</li>
-               <li class="nav-item dd">
-						<a class="nav-link" href="javascript:void(0)">Programs <span class="sr-only">(Programs)</span></a>
-						<ul class="list-unstyled dropdownMenu">
-							<li>
-								<a href="javascript:void(0)">Toddlers</a>
+								<a href="javascript:void(0)">فروع الرائدة</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">Preschool</a>
+								<a href="javascript:void(0)">روابط ذات علاقة</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">اتصل بنا</a>
 							</li>
 						</ul>
 					</li>
 					<li class="nav-item dd">
-						<a class="nav-link" href="javascript:void(0)">Programs <span class="sr-only">(Programs)</span></a>
+						<a class="nav-link" href="javascript:void(0)">المركز الإعلامي <span
+								class="sr-only">(Programs)</span></a>
 						<ul class="list-unstyled dropdownMenu">
 							<li>
-								<a href="javascript:void(0)">Toddlers</a>
+								<a href="javascript:void(0)">الاخبار</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">Preschool</a>
+								<a href="javascript:void(0)">عدسة الرائدة</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">مجلة تجارة الرياض</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">قناة الرائدة الرياض</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">الإعلانات</a>
 							</li>
 						</ul>
 					</li>
 					<li class="nav-item dd">
-						<a class="nav-link" href="javascript:void(0)">Curriculum <span class="sr-only">(Curriculum)</span></a>
+						<a class="nav-link" href="javascript:void(0)">الوفود التجارية <span
+								class="sr-only">(Programs)</span></a>
 						<ul class="list-unstyled dropdownMenu">
 							<li>
-								<a href="javascript:void(0)">Play-Based Learning</a>
+								<a href="javascript:void(0)">الوفود القادمة</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">Physical Literacy</a>
+								<a href="javascript:void(0)">الوفود السابقة</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">Steam Curriculum</a>
+								<a href="javascript:void(0)">دليل المنظمات الدولية</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">دليل الملاحق التجارية</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">جسر التعاون التجاري</a>
 							</li>
 						</ul>
 					</li>
 					<li class="nav-item dd">
-						<a class="nav-link" href="javascript:void(0)">Parent Corner <span class="sr-only">(Parent Corner)</span></a>
+						<a class="nav-link" href="javascript:void(0)">الخدمات الاإلكترونية <span
+								class="sr-only">(Curriculum)</span></a>
 						<ul class="list-unstyled dropdownMenu">
 							<li>
-								<a href="javascript:void(0)">Nutrition</a>
+								<a href="javascript:void(0)">بوابة أعمالي</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">Parent Reviews</a>
+								<a href="javascript:void(0)">خدمة سند</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">Enrolment</a>
+								<a href="javascript:void(0)"> البوابة الداخلية للموظفين</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"> خدمة حجز موعد</a>
+							</li>
+
+						</ul>
+					</li>
+					<li class="nav-item dd">
+						<a class="nav-link" href="javascript:void(0)">خدمة الرائدة<span class="sr-only">(Parent
+								Corner)</span></a>
+						<ul class="list-unstyled dropdownMenu">
+							<li>
+								<a href="javascript:void(0)">خدمات المشتركين </a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">خدمات الإستعلام</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">خدمات قانونية</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">خدمات الإرشاد الضريبي</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">خدمات ريادة الأعمال</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">خدمات التنمية المستدامة</a>
 							</li>
 						</ul>
 					</li>
 					<li class="nav-item dd">
-						<a class="nav-link" href="javascript:void(0)">Photo Gallery <span class="sr-only">(Photo Gallery)</span></a>
+						<a class="nav-link" href="javascript:void(0)">الفعاليات<span class="sr-only">(Photo
+								Gallery)</span></a>
 						<ul class="list-unstyled dropdownMenu">
 							<li>
-								<a href="javascript:void(0)">BH‘n’M - Mississauga</a>
+								<a href="javascript:void(0)">الفعاليات القادمة</a>
 							</li>
 							<li>
-								<a href="javascript:void(0)">BH‘n’M - Brampton</a>
+								<a href="javascript:void(0)">تقارير الفعاليات</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">تقويم الفعاليات</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">الحفل السنوي</a>
+							</li>
+
+						</ul>
+					</li>
+					<li class="nav-item dd">
+						<a class="nav-link" href="javascript:void(0)">قطاع دعم الأعمال <span class="sr-only">(Photo
+								Gallery)</span></a>
+						<ul class="list-unstyled dropdownMenu">
+							<li>
+								<a href="javascript:void(0)"> الإدارة الإلكترونية لأعمال اللجان</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"> لجان الرائدة الرياض</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)"> مرصد قطاع الأعمال</a>
+							</li>
+
+						</ul>
+					</li>
+					<li class="nav-item dd">
+						<a class="nav-link" href="javascript:void(0)">خدمات التدريب<span class="sr-only">(Photo
+								Gallery)</span></a>
+						<ul class="list-unstyled dropdownMenu">
+							<li>
+								<a href="javascript:void(0)"> الخطة التدريبية</a>
 							</li>
 						</ul>
 					</li>
 					<li class="nav-item dd">
-						<a class="nav-link" href="javascript:void(0)">Photo Gallery <span class="sr-only">(Photo Gallery)</span></a>
+						<a class="nav-link" href="javascript:void(0)">خدمات التوظيف<span class="sr-only">(Photo
+								Gallery)</span></a>
 						<ul class="list-unstyled dropdownMenu">
 							<li>
-								<a href="javascript:void(0)">BH‘n’M - Mississauga</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">BH‘n’M - Brampton</a>
+								<a href="javascript:void(0)">مركز التوظيف</a>
 							</li>
 						</ul>
 					</li>
-               <li class="nav-item dd">
-						<a class="nav-link" href="javascript:void(0)">Photo Gallery <span class="sr-only">(Photo Gallery)</span></a>
-						<ul class="list-unstyled dropdownMenu">
-							<li>
-								<a href="javascript:void(0)">BH‘n’M - Mississauga</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">BH‘n’M - Brampton</a>
-							</li>
-						</ul>
-					</li>	
 				</ul>
 			</div>
 		</nav>
 	</div>
 
-</header> 
+</header>

@@ -5,7 +5,7 @@
 }
 .navbar {
   a {
-    color: #000000;
+    color: #ffffff;
   }
   .logo-img {
     height: 55px;
@@ -13,24 +13,42 @@
   }
 }
 
-//----------------//
-header{
-  position: fixed;
-  height: 5rem;
-  width: 100%;
-  transition: 0.5s;
-  background: linear-gradient(to bottom, rgb(0 0 0 / 44%) 0%, rgb(0 0 0 / 0%) 100%);
-  background-color: #ffffff73;
+.fixed-top-head{
+    z-index: 0 !important;
 }
+//----------------//
+
 header nav{
-    // font-family: Roboto;
-    // font-size: 24px;
+  background: url(https://www.chamber.sa/_layouts/15/RDCCI/design/ar/images/black-bg.png) center top;
+  background-size: cover;
+  position: fixed;
+  height: 90px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 0 20px;
 }
 header nav .navbar-nav{
-    width: 100%;
+  padding: 0 2rem;
+  width: 100%;
 }
-.menuContainer{
-    // margin-top: -114px;
+header nav ul{
+ width: 100%;
+}
+header nav ul li {
+  width: 11.11111111111111%;
+}
+header nav ul .nav-item .nav-link{
+    font-size: 16px;
+    color: #fadc41;
+    border-bottom: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+    background: transparent;
+    padding: 20px 20px 0 0;
+    min-height: 66px;
+    background: url(https://www.chamber.sa/_layouts/15/RDCCI/design/ar/images/left-arrow-angle.png) no-repeat;
+    background-position: center right;
 }
 header nav .navbar-nav li>.nav-link{
     padding: 32px 19px !important;
@@ -151,46 +169,37 @@ header .navbar-light .navbar-nav .nav-item.dd:hover .nav-link::after{
 }
 
 .dropdownMenu{
-    display: none;
-    position: absolute;
-    left: 0;
-    top: auto;
-    // font-family: ApercuPro-Regular;
-    color: #004f6d;
-    background-color: #fff;
-    border-radius: 0 0 10px 10px;
-    width: 162%;
-    // font-size: 23px;
-    margin-top: 0px;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: auto;
+  border-radius: 0 0 10px 10px;
+  margin-top: 0px;
+  background: url(https://www.chamber.sa/_layouts/15/RDCCI/design/ar/images/black-bg.png) center top;
+  background-size: cover;
+  min-width: 10%;
+  padding: 20px 0 15px;
 }
 .dropdownMenu a{
-    padding-left: 25px;
+  font-size: 1rem;
+  width: 200px;
+  text-decoration: unset;
+  color: #fff !important;
+  border-bottom: 2px solid #e8eff0;
+  margin: 10px 5px;
+  display: block;
+  padding: 6px 10px;
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
 }
-.dropdownMenu::before{
-    content: '';
-    position: absolute;
-    top: -8%;
-    // left: 50%;
-    width: 29px;
-    height: 29px;
-    background-color: #fff;
-    border-radius: 5px;
-    z-index: 4;
-    transform: rotate(45deg) translate(-50%,50%);
-}
-.dropdownMenu>li{
-    padding: 10px 0;
-    border-radius: 0 0 10px 10px;
-    background-color: #fff;
-    position: relative;
-    z-index: 4;
+.dropdownMenu>li:hover{
+  background-color: #ff9800;
+  width: 100% !important;
 }
 
-.dropdownMenu>li:hover{
-    background-color: #f7f7f9;
-}
 header .navbar-light .navbar-nav .nav-item.dd:hover .dropdownMenu{
     display: block;
 }
+
 /* ending dropdown */
 
