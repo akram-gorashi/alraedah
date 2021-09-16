@@ -1,8 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
-$font-family: 'Cairo', sans-serif;
+// @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
+// $font-family: 'Cairo', sans-serif;
+$font-family: 'Almarai', sans-serif !important;
 
 body {
+    margin: 0;
+    padding: 0;
+    border: 0;
    font-size: 14px;
    text-align: right;
    overflow-x: hidden;
@@ -33,4 +38,15 @@ agm-map {
    100% {
        transform: scale(.8);
    }
+}
+
+ h2 {
+    font-size: 40px !important;
+    font-weight: bold !important;
+    margin-bottom: 50px !important;
+    color: #455560 !important;
+}
+h4{
+    font-family: inherit;
+    font-weight: 400 !important;
 }
