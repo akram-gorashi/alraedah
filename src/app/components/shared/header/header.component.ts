@@ -9,10 +9,17 @@ export class HeaderComponent implements OnInit {
   /* UI */
   hasScrolledBanner = false;
   isNavbarCollapsed = false;
+  isShownHead: boolean = false ; // show and hide header
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+   
+  }
 
+  toggleShowHead() {
+  this.isShownHead = true;
+  }
   /**
    * Listens to window scroll events
    *
