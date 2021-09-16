@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top" [class.nav-scrolled]="hasScrolledBanner">
+<!-- <nav class="navbar navbar-expand-lg fixed-top" [class.nav-scrolled]="hasScrolledBanner">
 
    <div class="container">
       <a class="navbar-brand">
@@ -31,6 +31,10 @@
             <li class="nav-item">
                <a class="nav-link">
                   English
+               </a>
+            </li>
+            <li class="nav-item">
+               <a  class="nav-link"(click)="toggleShowHead()">
                   <i class="fa fa-list"></i>
                </a>
             </li>
@@ -43,3 +47,120 @@
       </div>
    </div>
 </nav>
+
+ *ngIf="isShownHead"
+-->
+
+ <header class="container-fluid " >
+	<div class="container px-0 menuContainer">
+		<nav class="navbar navbar-expand-xl navbar-light align-items-end p-xl-0">
+			<a class="navbar-brand d-none" href="javascript:void(0)">
+				<img src="https://runyoursite.in/wp-content/uploads/2020/02/runyoursite-logo.png" width="180px" class="img-fluid">
+			</a>
+
+			<a href="javascript:void(0)" id="mobileBar" class="d-none ml-auto"> <i class="fa fa-bars"></i></a>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-md-auto justify-content-end" id="nav">
+					<!-- <li class="nav-item active">
+						<a class="nav-link" href="javascript:void(0)">Home <span class="sr-only">(current)</span></a>
+					</li> -->
+               <li class="nav-item dd">
+						<a class="nav-link" href="javascript:void(0)">Programs <span class="sr-only">(Programs)</span></a>
+						<ul class="list-unstyled dropdownMenu">
+							<li>
+								<a href="javascript:void(0)">Toddlers</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">Preschool</a>
+							</li>
+						</ul>
+					</li>
+               <li class="nav-item dd">
+						<a class="nav-link" href="javascript:void(0)">Programs <span class="sr-only">(Programs)</span></a>
+						<ul class="list-unstyled dropdownMenu">
+							<li>
+								<a href="javascript:void(0)">Toddlers</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">Preschool</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dd">
+						<a class="nav-link" href="javascript:void(0)">Programs <span class="sr-only">(Programs)</span></a>
+						<ul class="list-unstyled dropdownMenu">
+							<li>
+								<a href="javascript:void(0)">Toddlers</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">Preschool</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dd">
+						<a class="nav-link" href="javascript:void(0)">Curriculum <span class="sr-only">(Curriculum)</span></a>
+						<ul class="list-unstyled dropdownMenu">
+							<li>
+								<a href="javascript:void(0)">Play-Based Learning</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">Physical Literacy</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">Steam Curriculum</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dd">
+						<a class="nav-link" href="javascript:void(0)">Parent Corner <span class="sr-only">(Parent Corner)</span></a>
+						<ul class="list-unstyled dropdownMenu">
+							<li>
+								<a href="javascript:void(0)">Nutrition</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">Parent Reviews</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">Enrolment</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dd">
+						<a class="nav-link" href="javascript:void(0)">Photo Gallery <span class="sr-only">(Photo Gallery)</span></a>
+						<ul class="list-unstyled dropdownMenu">
+							<li>
+								<a href="javascript:void(0)">BH‘n’M - Mississauga</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">BH‘n’M - Brampton</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dd">
+						<a class="nav-link" href="javascript:void(0)">Photo Gallery <span class="sr-only">(Photo Gallery)</span></a>
+						<ul class="list-unstyled dropdownMenu">
+							<li>
+								<a href="javascript:void(0)">BH‘n’M - Mississauga</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">BH‘n’M - Brampton</a>
+							</li>
+						</ul>
+					</li>
+               <li class="nav-item dd">
+						<a class="nav-link" href="javascript:void(0)">Photo Gallery <span class="sr-only">(Photo Gallery)</span></a>
+						<ul class="list-unstyled dropdownMenu">
+							<li>
+								<a href="javascript:void(0)">BH‘n’M - Mississauga</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">BH‘n’M - Brampton</a>
+							</li>
+						</ul>
+					</li>	
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+</header> 

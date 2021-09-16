@@ -8,6 +8,10 @@
   overflow: hidden;
   background-color: $primary-color;
   opacity: 0.9;
+  .container-services{
+    width: 90%;
+    margin: auto;
+  }
   .bg {
     width: 800em;
     height: 100%;
@@ -33,7 +37,7 @@
 }
 .box {
   width: 227px;
-  height: 227px;
+  height: 180px;
   a {
     display: block;
     text-align: center;
@@ -45,12 +49,23 @@
       color: $white;
       padding-bottom: 20px;
     }
-    i:hover {
-      transition: all 0.15s ease-out 0s;
-    }
     img {
       width: 70px;
       padding-bottom: 20px;
+    }
+    img:hover{
+      transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+    }
+    span{
+      font-size: 1.5rem;
+    font-weight: bold;
+    }
+    i.fa.fa-3x:hover{
+      transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
     }
   }
 }
