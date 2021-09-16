@@ -17,9 +17,6 @@ export class HeaderComponent implements OnInit {
    
   }
 
-  toggleShowHead() {
-  this.isShownHead = true;
-  }
   /**
    * Listens to window scroll events
    *
@@ -28,7 +25,14 @@ export class HeaderComponent implements OnInit {
    */
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
-    if (window.pageYOffset > 100) this.hasScrolledBanner = true;
-    else this.hasScrolledBanner = false;
+    if (window.pageYOffset > 100) {
+      this.hasScrolledBanner = true;
+      this.isShownHead = false;
+    } else this.hasScrolledBanner = false;
   }
+
+ /*  @HostListener('document:click', ['$event']) onDocumentClick(event:any) {
+     if (this.isShownHead) {this.isShownHead = false};
+  }
+ */
 }
