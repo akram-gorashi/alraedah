@@ -18,10 +18,19 @@ export class AdsCenterComponent implements OnInit {
    navSpeed: 700,
    navText: ['', ''],
    responsive: {
-      900: {
-         items: 1
+      0: {
+        items: 1
+      },
+      400: {
+        items: 1
+      },
+      740: {
+        items: 1
+      },
+      940: {
+        items: 1
       }
-   },
+    },
    responsiveRefreshRate: 50
 }
 

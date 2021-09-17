@@ -191,3 +191,11 @@ h4 {
       transform: rotate(-135deg);
     }
 }
+
+@media (max-width: 500px) {
+
+.main-container {
+   margin-right: unset;
+   // margin-bottom: 2rem;
+ }
+}

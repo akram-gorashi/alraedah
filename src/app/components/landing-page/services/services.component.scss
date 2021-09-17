@@ -8,7 +8,7 @@
   overflow: hidden;
   background-color: $primary-color;
   opacity: 0.9;
-  .container-services{
+  .container-services {
     width: 90%;
     margin: auto;
   }
@@ -54,16 +54,16 @@
       width: 70px;
       padding-bottom: 20px;
     }
-    img:hover{
+    img:hover {
       transform: scale(1.1);
       -ms-transform: scale(1.1);
       -webkit-transform: scale(1.1);
     }
-    span{
+    span {
       font-size: 1.5rem;
-    font-weight: bold;
+      font-weight: bold;
     }
-    i.fa.fa-3x:hover{
+    i.fa.fa-3x:hover {
       transform: scale(1.1);
       -ms-transform: scale(1.1);
       -webkit-transform: scale(1.1);
@@ -71,6 +71,17 @@
   }
 }
 .ads-carousel {
-   background-color: $primary-color;
-   opacity: 0.9;
+  background-color: $primary-color;
+  opacity: 0.9;
+}
+@media (max-width: 500px) {
+  .about {
+    height: unset;
+  }
+  .box {
+    width: unset;
+    a {
+      display: block;
+    }
+  }
 }
